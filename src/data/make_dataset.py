@@ -5,7 +5,7 @@ from glob import glob
 # Read single CSV file
 # --------------------------------------------------------------
 
-single_file_acc = pd.read_csv(../../data/raw/MetaMotion/A)
+single_file_acc = pd.read_csv("../../data/raw/MetaMotion")
 # --------------------------------------------------------------
 # List all data in data/raw/MetaMotion
 # --------------------------------------------------------------
