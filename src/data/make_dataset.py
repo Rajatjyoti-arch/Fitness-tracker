@@ -21,10 +21,11 @@ print(len(files))
 data_path = "../../data/raw/MetaMotion/"
 f = files[0]
 
-f.split("-")[0].replace(data_path, "")
-#participant
-#label
-#category
+participant = f.split("-")[0].replace(data_path, "")
+
+label = f.split("-")[1]
+
+category = f.split("-")[2].rstrip()
 
 # Read all files
 
