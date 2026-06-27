@@ -18,10 +18,10 @@ print(len(files))
 
 # Extract features from filename
 
-data_path = "../../data/raw/MetaMotion/*.csv"
+data_path = "../../data/raw/MetaMotion/"
 f = files[0]
 
-f.split("-")[0]
+f.split("-")[0].replace(data_path, "")
 #participant
 #label
 #category
