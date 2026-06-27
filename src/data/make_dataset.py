@@ -21,7 +21,7 @@ print(len(files))
 data_path = "../../data/raw/MetaMotion/*.csv"
 f = files[0]
 
-f.split("-")
+f.split("-")[0]
 #participant
 #label
 #category
