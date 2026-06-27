@@ -21,7 +21,10 @@ print(len(files))
 data_path = "../../data/raw/MetaMotion/*.csv"
 f = files[0]
 
-participant
+f.split("-")
+#participant
+#label
+#category
 
 # Read all files
 
