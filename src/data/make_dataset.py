@@ -18,7 +18,10 @@ print(len(files))
 
 # Extract features from filename
 
-files[0]
+data_path = "../../data/raw/MetaMotion/*.csv"
+f = files[0]
+
+participant
 
 # Read all files
 
