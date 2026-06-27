@@ -13,6 +13,8 @@ single_file_gyr = pd.read_csv("../../data/raw/MetaMotion/A-bench-heavy2-rpe8_Met
 
 # List all data in data/raw/MetaMotion
 
+files = glob("../../data/raw/MetaMotion/*.csv")
+
 
 # Extract features from filename
 
