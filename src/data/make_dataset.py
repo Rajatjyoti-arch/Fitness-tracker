@@ -19,7 +19,7 @@ print(len(files))
 # Extract features from filename
 
 data_path = "../../data/raw/MetaMotion/"
-f = files[0]
+f = files[1]
 
 participant = f.split("-")[0].replace(data_path, "")
 
@@ -42,7 +42,13 @@ acc_set = 1
 gyr_set = 1
 
 for f in files:
-    
+
+    participant = f.split("-")[0].replace(data_path, "")
+    label = f.split("-")[1]
+    category = f.split("-")[2].rstrip("2")
+
+    print(label)
+
 
 # Working with datetimes
 
