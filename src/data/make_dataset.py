@@ -35,6 +35,14 @@ df["category"] = category
 
 # Read all files
 
+acc_df = pd.DataFrame()
+gyr_df = pd.DataFrame()
+
+acc_set = 1
+gyr_set = 1
+
+for f in files:
+    
 
 # Working with datetimes
 
