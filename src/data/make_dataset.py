@@ -25,7 +25,13 @@ participant = f.split("-")[0].replace(data_path, "")
 
 label = f.split("-")[1]
 
-category = f.split("-")[2].rstrip()
+category = f.split("-")[2].rstrip("2")
+
+df = pd.read_csv(f)
+
+df["participants"] = participant
+df["labels"] = label
+df["category"] = category
 
 # Read all files
 
