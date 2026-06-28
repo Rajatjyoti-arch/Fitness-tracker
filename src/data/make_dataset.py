@@ -83,8 +83,10 @@ del gyr_df["elapsed (s)"]
 
 # Turn into function
 
-files = glob("")
+files = glob("../../data/raw/MetaMotion/*.csv")
 
+def read_data_from_files(files):
+    
 # Merging datasets
 
 
