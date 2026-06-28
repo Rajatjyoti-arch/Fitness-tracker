@@ -63,9 +63,9 @@ for f in files:
         gyr_set += 1
         gyr_df = pd.concat([gyr_df, df])
 
-
-
 # Working with datetimes
+
+
 
 
 # Turn into function
