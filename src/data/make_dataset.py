@@ -59,7 +59,10 @@ for f in files:
         acc_df = pd.concat([acc_df, df])
 
     if "Gyroscope" in f:
+        df["set"] = gyr_set
+        gyr_set += 1
         gyr_df = pd.concat([gyr_df, df])
+
 
 
 # Working with datetimes
