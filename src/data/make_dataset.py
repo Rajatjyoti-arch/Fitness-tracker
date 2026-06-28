@@ -129,6 +129,7 @@ def read_data_from_files(files):
 
     return acc_df, gyr_df
 
+acc_df, gyr_df = read_data_from_files(files)
 
 # Merging datasets
 
