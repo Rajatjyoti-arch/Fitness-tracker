@@ -68,7 +68,7 @@ for f in files:
 acc_df.info()
 
 pd.to_datetime(df["epoch (ms)"], unit="ms")
-df
+df["time ()"]
 
 # Turn into function
 
