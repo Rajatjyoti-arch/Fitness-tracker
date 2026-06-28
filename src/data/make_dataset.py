@@ -65,7 +65,7 @@ for f in files:
 
 # Working with datetimes
 
-
+acc_df.info()
 
 
 # Turn into function
