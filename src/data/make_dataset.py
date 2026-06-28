@@ -47,7 +47,16 @@ for f in files:
     label = f.split("-")[1]
     category = f.split("-")[2].rstrip("2")
 
-    df = 
+    df = pd.read_csv(f)
+
+    df["participants"] = participant
+    df["labels"] = label
+    df["category"] = category
+
+    if "Accelerometer" in f:
+        acc_df = pd.concat([acc_df, df])
+    elif "Gyroscope" in f:
+        gyr_df = pd.concat([gyr_df, df])
 
 
 # Working with datetimes
