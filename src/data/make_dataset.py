@@ -47,7 +47,7 @@ for f in files:
     label = f.split("-")[1]
     category = f.split("-")[2].rstrip("2")
 
-    print(label)
+    df = 
 
 
 # Working with datetimes
