@@ -86,7 +86,38 @@ del gyr_df["elapsed (s)"]
 files = glob("../../data/raw/MetaMotion/*.csv")
 
 def read_data_from_files(files):
-    
+
+    acc_df = pd.DataFrame()
+    gyr_df = pd.DataFrame()
+
+    acc_set = 1
+    gyr_set = 1
+
+    for f in files:
+
+        participant = f.split("-")[0].replace(data_path, "")
+        label = f.split("-")[1]
+        category = f.split("-")[2].rstrip("2")
+
+        df = pd.read_csv(f)
+
+        df["participants"] = participant
+        df["labels"] = label
+        df["category"] = category
+
+        if "Accelerometer" in f:
+            df["set"] = acc_set
+            acc_set += 1
+            acc_df = pd.concat([acc_df, df])
+
+        if "Gyroscope" in f:
+            df["set"] = gyr_set
+            gyr_set += 1
+            gyr_df = pd.concat([gyr_df, df])
+
+            
+
+    return acc_df, gyr_df
 # Merging datasets
 
 
