@@ -69,8 +69,7 @@ acc_df.info()
 
 pd.to_datetime(df["epoch (ms)"], unit="ms")
 
-df["time (01:00)"].dt.week
-pd.to_datetime(df["time (01:00)"]).dt.month
+acc_df.index = pd.to_datetime(acc_df["epoch (ms)"], unit="ms")
 
 # Turn into function
 
