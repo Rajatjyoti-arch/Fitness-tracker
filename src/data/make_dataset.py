@@ -54,8 +54,10 @@ for f in files:
     df["category"] = category
 
     if "Accelerometer" in f:
+        df["set"] = acc_set
+        acc_set += 1
         acc_df = pd.concat([acc_df, df])
-        
+
     if "Gyroscope" in f:
         gyr_df = pd.concat([gyr_df, df])
 
