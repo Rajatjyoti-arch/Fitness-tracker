@@ -83,6 +83,7 @@ del gyr_df["elapsed (s)"]
 
 # Turn into function
 
+files = glob("")
 
 # Merging datasets
 
