@@ -55,7 +55,8 @@ for f in files:
 
     if "Accelerometer" in f:
         acc_df = pd.concat([acc_df, df])
-    elif "Gyroscope" in f:
+        
+    if "Gyroscope" in f:
         gyr_df = pd.concat([gyr_df, df])
 
 
