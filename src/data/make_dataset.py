@@ -68,7 +68,9 @@ for f in files:
 acc_df.info()
 
 pd.to_datetime(df["epoch (ms)"], unit="ms")
-df["time (01:00)"]
+
+df["time (01:00)"].dt.week
+pd.to_datetime(df["time (01:00)"]).dt.month
 
 # Turn into function
 
